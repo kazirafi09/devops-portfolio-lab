@@ -56,119 +56,125 @@ const skills = [
 
 const projects = [
     {
-        title: "AI Photo Booth", 
+        title: "CodeWatch",
         category: "AI / ML",
         year: "2026",
         description:
-            "Automated photo booth app transforming guest portraits into stylized AI fashion sketches with integrated cloud printing.", 
+            "Automated real-time code reviewer powered by local LLMs that delivers streaming feedback on file save.",
         overview:
-            "A comprehensive photo booth application built with Laravel 12 that leverages the Replicate API to transform user photos into black-and-white fashion sketches, storing assets in cloud storage and dispatching them directly to local print hardware.", 
+            "An automated developer productivity tool that monitors file saves in the background to provide instant AI-driven code reviews without sending source code off the local machine. It handles multi-project monitoring, avoids duplicate runs, and streams tokens directly to the browser UI.",
         problem:
-            "Event photo booths often require manual post-processing, slow rendering pipelines, and complex local print configurations to produce custom artistic takeaways.", 
+            "Traditional cloud-based AI code reviews introduce latency, expose private source code to external servers, and require repetitive manual prompts or PR submissions.",
         solution:
-            "Engineered an automated pipeline connecting Livewire-driven uploads directly to Replicate model endpoints, DigitalOcean Spaces, and the PrintNode API for instant hardware execution.", 
+            "Architected an offline-first watcher using Python and FastAPI connected to Ollama, pairing it with a reactive React/TypeScript frontend for real-time word-by-word streaming.",
         features: [
-            "Automated AI black-and-white sketch generation via Replicate API", 
-            "Direct thermal/hardware printing automation using PrintNode API", 
-            "Cloud asset storage pipeline with DigitalOcean Spaces and Intervention Image 3" 
+            "Local LLM inference via Ollama ensuring zero code egress",
+            "Real-time word-by-word feedback streaming to a web dashboard",
+            "Multi-project file watching with duplicate review avoidance",
+            "Review history logging, hot-reloadable settings, and Telegram/desktop alerts"
         ],
         technologies: [
-            "Laravel 12", 
-            "Livewire 3", 
-            "Replicate AI", 
-            "PHP 8.2+", 
-            "DigitalOcean Spaces", 
-            "PrintNode API" 
+            "Python",
+            "FastAPI",
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "SQLite",
+            "Ollama"
         ],
-        image: "images/projects/photo-booth.jpg",
+        image: "images/projects/codewatch.jpg",
         video: "",
-        github: "https://github.com/kazirafi09", 
+        github: "https://github.com/kazirafi09",
         demo: ""
     },
     {
-        title: "Talk to Quran", 
+        title: "Medical Image Segmentation",
         category: "AI / ML",
         year: "2026",
         description:
-            "AI-powered Quranic assistant delivering context-grounded responses with exact Surah and Ayah citations.", 
+            "Multi-Task U-Net deep learning model for automated breast tumor detection and segmentation in ultrasound scans.",
         overview:
-            "A cross-platform mobile assistant created with Flutter and Material 3, backed by a custom Python API to parse chat histories and retrieve grounded Quranic knowledge.", 
+            "A computer vision system developed to aid clinical workflows by simultaneously classifying and segmenting breast tumors from ultrasound images using the BUSI dataset, served via a Gradio interface.",
         problem:
-            "Finding direct Quranic references and contextual answers via mobile search often requires cross-referencing multiple unstructured sources.", 
+            "Manual ultrasound segmentation is labor-intensive and subject to high inter-observer variability in tumor boundary delineation.",
         solution:
-            "Built an AI-grounded retrieval service with Python and integrated it seamlessly into a clean Flutter interface with Firebase Authentication.", 
+            "Engineered a Multi-Task U-Net architecture in PyTorch using custom combined loss functions, advanced data augmentations, and an interactive Gradio inference UI.",
         features: [
-            "Grounded responses paired with exact Surah and Ayah citations", 
-            "Contextual chat memory processed via a dedicated Python API server", 
-            "Secure session management with Firebase Auth" 
+            "Simultaneous tumor segmentation and classification in a unified pipeline",
+            "Custom multi-task combined loss functions for robust boundary learning",
+            "Interactive real-time inference web application built with Gradio",
+            "Achieved 79% accuracy and a 0.72 Dice similarity coefficient"
         ],
         technologies: [
-            "Flutter", 
-            "Material 3", 
-            "Python", 
-            "Firebase Auth", 
-            "Cloud Firestore" 
+            "Python",
+            "PyTorch",
+            "Computer Vision",
+            "Deep Learning",
+            "Gradio",
+            "Scikit-learn"
         ],
-        image: "images/projects/talk-to-quran.jpg",
+        image: "images/projects/medical-segmentation.jpg",
         video: "",
-        github: "https://github.com/kazirafi09", 
+        github: "https://github.com/kazirafi09",
         demo: ""
     },
     {
-        title: "Shelf-E", 
+        title: "Shelf-E",
         category: "Full Stack",
         year: "2026",
         description:
-            "Modern e-commerce bookstore featuring real-time API search, cart handling, and an admin management suite.", 
+            "Modern e-commerce bookstore featuring real-time API search, cart handling, and an admin management suite.",
         overview:
-            "A full-featured online book retail platform developed using Laravel 12, Tailwind CSS, and Alpine.js 3, featuring live catalog queries and an administrative order management flow.", 
+            "A full-featured online book retail platform developed using Laravel 12, Tailwind CSS, and Alpine.js 3, featuring live catalog queries and an administrative order management flow.",
         problem:
-            "Online book shoppers need instant client-side catalog filtering without full-page reloads, backed by reliable order and inventory tracking.", 
+            "Online book shoppers need instant client-side catalog filtering without full-page reloads, backed by reliable order and inventory tracking.",
         solution:
-            "Implemented an API-driven frontend catalog in Alpine.js paired with Laravel Breeze authentication and SQLite/MySQL database operations.", 
+            "Implemented an API-driven frontend catalog in Alpine.js paired with Laravel Breeze authentication and SQLite/MySQL database operations.",
         features: [
-            "Real-time API-driven live book search and dynamic catalog filtering", 
-            "Full shopping cart, checkout workflow, and order tracking", 
-            "Protected admin dashboard for inventory and order management" 
+            "Real-time API-driven live book search and dynamic catalog filtering",
+            "Full shopping cart, checkout workflow, and order tracking",
+            "Protected admin dashboard for inventory and order management"
         ],
         technologies: [
-            "Laravel 12", 
-            "Alpine.js 3", 
-            "Tailwind CSS", 
-            "SQLite", 
-            "Laravel Breeze" 
+            "Laravel 12",
+            "Alpine.js 3",
+            "Tailwind CSS",
+            "SQLite",
+            "Laravel Breeze"
         ],
         image: "images/projects/shelf-e.jpg",
         video: "",
-        github: "https://github.com/kazirafi09", 
-        demo: "https://www.shelfebd.com/" 
+        github: "https://github.com/kazirafi09",
+        demo: "https://www.shelfebd.com/"
     },
     {
-        title: "PlagiarDetect", 
-        category: "Backend",
-        year: "2025",
+        title: "PlagiarDetect",
+        category: "Full Stack",
+        year: "2026",
         description:
-            "Document parsing and similarity checking system designed to analyze academic and professional text files.", 
+            "Full-stack academic integrity platform with role-based dashboards, assignment tracking, and analytics.",
         overview:
-            "An automated plagiarism analysis backend combining Laravel and Python algorithms to verify submitted documents against internal databases.", 
+            "An academic integrity web application developed with Laravel and Blade templates, featuring distinct dashboards for students and instructors to track assignment submissions, similarity metrics, and deadlines.",
         problem:
-            "Manually comparing multi-format document submissions for structural text overlap is slow and prone to formatting inconsistencies.", 
+            "Academic institutions need structured, centralized portals where instructors and students can securely manage submission workflows and review integrity reports.",
         solution:
-            "Created an automated document conversion and parsing pipeline that runs similarity comparison algorithms and sends automated email reports.", 
+            "Built a modular Laravel web system with role-based authentication (Student/Instructor), assignment analytics, and responsive Blade UI interfaces.",
         features: [
-            "Multi-format document parsing and text similarity scoring", 
-            "Automated result generation with asynchronous email alerts", 
-            "Secure file storage pipeline with role-based access management" 
+            "Student & Instructor dashboards with real-time assignment analytics",
+            "Role-based authentication and secure account/profile management",
+            "Responsive UI and modern landing pages built with Blade templates"
         ],
         technologies: [
-            "Laravel", 
-            "Python", 
-            "MySQL", 
-            "REST APIs" 
+            "Laravel",
+            "PHP",
+            "MySQL",
+            "SQLite",
+            "Bootstrap",
+            "Blade"
         ],
         image: "images/projects/plagiardetect.jpg",
         video: "",
-        github: "https://github.com/kazirafi09", 
+        github: "https://github.com/kazirafi09",
         demo: ""
     }
 ];
