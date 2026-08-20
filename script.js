@@ -1,34 +1,13 @@
 "use strict";
 
-/*
-=========================================================
-PORTFOLIO CONFIGURATION
-=========================================================
-
-Most of the content you will need to change lives here.
-
-Replace the placeholders with your actual information.
-
-=========================================================
-*/
-
-
-/* =========================================================
-   PERSONAL CONFIG
-========================================================= */
-
 const portfolioConfig = {
-    name: "[YOUR NAME]",
-    email: "[YOUR EMAIL]",
+    name: "KAZI RAFIUL KADER",
+    email: "kazirafi09@gmail.com",
 
-    github: "[GITHUB URL]",
-    linkedin: "[LINKEDIN URL]"
+    github: "https://github.com/kazirafi09",
+    linkedin: "https://www.linkedin.com/in/kazi-rafiul-kader-8888441a9/"
 };
 
-
-/* =========================================================
-   SKILLS DATA
-========================================================= */
 
 const skills = [
     {
@@ -96,34 +75,6 @@ const skills = [
         ]
     }
 ];
-
-
-/* =========================================================
-   PROJECT DATA
-=========================================================
-
-To add a project, simply add another object to this array.
-
-Available properties:
-
-title
-category
-year
-description
-overview
-problem
-solution
-features[]
-technologies[]
-image
-video
-github
-demo
-
-If image/video/github/demo doesn't exist, use an empty string.
-
-=========================================================
-*/
 
 const projects = [
 
@@ -246,10 +197,6 @@ const projects = [
 ];
 
 
-/* =========================================================
-   EXPERIENCE DATA
-========================================================= */
-
 const experience = [
 
     {
@@ -269,10 +216,6 @@ const experience = [
 
 ];
 
-
-/* =========================================================
-   DOM REFERENCES
-========================================================= */
 
 const elements = {
     body: document.body,
@@ -305,10 +248,6 @@ const elements = {
 };
 
 
-/* =========================================================
-   INITIALIZATION
-========================================================= */
-
 document.addEventListener("DOMContentLoaded", () => {
 
     initializeTheme();
@@ -337,10 +276,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-
-/* =========================================================
-   SKILLS
-========================================================= */
 
 function renderSkills() {
 
@@ -385,11 +320,6 @@ function renderSkills() {
 
     observeNewRevealElements();
 }
-
-
-/* =========================================================
-   PROJECT FILTERS
-========================================================= */
 
 function renderProjectFilters() {
 
@@ -442,11 +372,6 @@ function renderProjectFilters() {
         });
 }
 
-
-/* =========================================================
-   PROJECT RENDERING
-========================================================= */
-
 function renderProjects(filter = "all") {
 
     if (!elements.projectsContainer) {
@@ -481,10 +406,6 @@ function renderProjects(filter = "all") {
     observeNewRevealElements();
 }
 
-
-/* =========================================================
-   PROJECT CARD
-========================================================= */
 
 function createProjectCard(project, index) {
 
@@ -587,11 +508,6 @@ function createProjectCard(project, index) {
         </article>
     `;
 }
-
-
-/* =========================================================
-   PROJECT MODAL
-========================================================= */
 
 function initializeModal() {
 
@@ -832,10 +748,6 @@ function closeProjectModal() {
 }
 
 
-/* =========================================================
-   EXPERIENCE
-========================================================= */
-
 function renderExperience() {
 
     if (!elements.experienceContainer) {
@@ -895,10 +807,6 @@ function renderExperience() {
 }
 
 
-/* =========================================================
-   MOBILE NAVIGATION
-========================================================= */
-
 function initializeNavigation() {
 
     if (
@@ -955,11 +863,6 @@ function initializeNavigation() {
     );
 }
 
-
-/* =========================================================
-   SCROLL EFFECTS
-========================================================= */
-
 function initializeScrollEffects() {
 
     window.addEventListener(
@@ -986,10 +889,6 @@ function initializeScrollEffects() {
 
 }
 
-
-/* =========================================================
-   ACTIVE NAVIGATION
-========================================================= */
 
 const navigationSections = [
     "about",
@@ -1047,10 +946,6 @@ navigationSections.forEach(id => {
 });
 
 
-/* =========================================================
-   REVEAL ANIMATIONS
-========================================================= */
-
 let revealObserver = null;
 
 
@@ -1096,11 +991,6 @@ function observeNewRevealElements() {
             revealObserver.observe(element);
         });
 }
-
-
-/* =========================================================
-   THEME
-========================================================= */
 
 function initializeTheme() {
 
@@ -1160,11 +1050,6 @@ function updateThemeIcon(isLight) {
         isLight ? "☀" : "☾";
 }
 
-
-/* =========================================================
-   BACK TO TOP
-========================================================= */
-
 function initializeBackToTop() {
 
     if (!elements.backToTop) {
@@ -1184,11 +1069,6 @@ function initializeBackToTop() {
     );
 }
 
-
-/* =========================================================
-   YEAR
-========================================================= */
-
 function updateYear() {
 
     if (!elements.currentYear) {
@@ -1198,11 +1078,6 @@ function updateYear() {
     elements.currentYear.textContent =
         new Date().getFullYear();
 }
-
-
-/* =========================================================
-   SECURITY / HTML HELPERS
-========================================================= */
 
 function escapeHTML(value) {
 
