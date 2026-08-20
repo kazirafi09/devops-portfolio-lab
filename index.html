@@ -2,20 +2,630 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Portfolio</title>
+    <meta
+        name="description"
+        content="[YOUR NAME] — Software Engineer and AI Engineer building software, AI/ML systems, and real-world products."
+    >
+    <meta name="author" content="[YOUR NAME]">
+
+    <meta property="og:title" content="[YOUR NAME] — Software Engineer | AI Engineer">
+    <meta
+        property="og:description"
+        content="Software Engineer and AI Engineer building intelligent, reliable software."
+    >
+    <meta property="og:type" content="website">
+
+    <title>[YOUR NAME] — Software Engineer | AI Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Cloud & DevOps Engineer Portfolio</h1>
-        <p>CI Pipeline Automated with Jenkins & Docker</p>
+
+    <!-- ==================== HEADER ==================== -->
+
+    <header class="site-header" id="site-header">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo" aria-label="Go to homepage">
+                <span class="logo-mark">&lt;/&gt;</span>
+                <span>[YOUR NAME]</span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    type="button"
+                    aria-label="Toggle color theme"
+                    title="Toggle theme"
+                >
+                    <span id="theme-icon">☾</span>
+                </button>
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
+
+
     <main>
-        <section>
-            <h2>Status: Running via Verified Docker Container</h2>
+
+        <!-- ==================== HERO ==================== -->
+
+        <section class="hero section" id="home">
+
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content reveal">
+
+                    <div class="status-line">
+                        <span class="status-dot"></span>
+                        <span>Currently <strong>AI Engineer Trainee</strong></span>
+                    </div>
+
+                    <p class="eyebrow">SOFTWARE ENGINEER / AI ENGINEER</p>
+
+                    <h1>
+                        I build software that
+                        <span class="accent-text">solves real problems.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm <strong>[YOUR NAME]</strong>, a software engineer focused on
+                        AI/ML, backend systems, and practical software development.
+                        I enjoy turning complex problems into reliable, maintainable
+                        products.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work
+                            <span>↗</span>
+                        </a>
+
+                        <a
+                            href="[GITHUB URL]"
+                            class="btn btn-secondary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                            <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+
+                        <a
+                            href="[LINKEDIN URL]"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            LinkedIn
+                        </a>
+
+                        <span>/</span>
+
+                        <a
+                            href="[GITHUB URL]"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            GitHub
+                        </a>
+
+                        <span>/</span>
+
+                        <a href="mailto:[YOUR EMAIL]">
+                            Email
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual reveal">
+
+                    <div class="terminal-window">
+
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="terminal-title">
+                                engineer.config
+                            </span>
+                        </div>
+
+                        <div class="terminal-body">
+
+<pre><span class="code-muted">01</span> <span class="code-key">const</span> engineer = {
+<span class="code-muted">02</span>   role: <span class="code-string">"Software Engineer"</span>,
+<span class="code-muted">03</span>   focus: [
+<span class="code-muted">04</span>     <span class="code-string">"AI / ML"</span>,
+<span class="code-muted">05</span>     <span class="code-string">"Backend Systems"</span>,
+<span class="code-muted">06</span>     <span class="code-string">"Software Engineering"</span>
+<span class="code-muted">07</span>   ],
+<span class="code-muted">08</span>   mindset: <span class="code-string">"Build. Measure. Improve."</span>,
+<span class="code-muted">09</span>   status: <span class="code-string">"Learning & Building"</span>
+<span class="code-muted">10</span> };</pre>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card card-top">
+                        <span class="floating-label">FOCUS</span>
+                        <strong>AI + Software</strong>
+                    </div>
+
+                    <div class="floating-card card-bottom">
+                        <span class="floating-label">APPROACH</span>
+                        <strong>Build → Test → Iterate</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <span class="scroll-line"></span>
+            </div>
+
         </section>
+
+
+        <!-- ==================== ABOUT ==================== -->
+
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-number">01</span>
+                    <div>
+                        <p class="eyebrow">ABOUT ME</p>
+                        <h2>Engineer first.<br><span>Technology second.</span></h2>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-main reveal">
+
+                        <p class="large-text">
+                            I approach software engineering as a problem-solving
+                            discipline rather than simply writing code.
+                        </p>
+
+                        <p>
+                            I'm currently working as an
+                            <strong>AI Engineer Trainee at [COMPANY NAME]</strong>,
+                            where I'm developing practical experience with
+                            artificial intelligence, machine learning, and
+                            software engineering.
+                        </p>
+
+                        <p>
+                            My interests sit at the intersection of
+                            <strong>AI/ML and production software</strong>.
+                            I enjoy understanding how systems work, identifying
+                            bottlenecks, and building solutions that are useful
+                            beyond a notebook or proof of concept.
+                        </p>
+
+                        <p>
+                            My engineering philosophy is simple:
+                            <strong>understand the problem, build deliberately,
+                            test the assumptions, and improve continuously.</strong>
+                        </p>
+
+                    </div>
+
+                    <aside class="about-aside reveal">
+
+                        <div class="stat-card">
+                            <span class="stat-number">AI</span>
+                            <span class="stat-label">Primary Focus</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <span class="stat-number">SWE</span>
+                            <span class="stat-label">Engineering Focus</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Learning Mindset</span>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== SKILLS ==================== -->
+
+        <section class="section skills-section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-number">02</span>
+                    <div>
+                        <p class="eyebrow">TECHNICAL STACK</p>
+                        <h2>Tools I use to<br><span>build things.</span></h2>
+                    </div>
+                </div>
+
+                <div class="skills-grid" id="skills-container">
+                    <!-- Generated by JavaScript -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== PROJECTS ==================== -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="projects-header">
+
+                    <div class="section-heading reveal">
+                        <span class="section-number">03</span>
+                        <div>
+                            <p class="eyebrow">SELECTED WORK</p>
+                            <h2>Things I've<br><span>built.</span></h2>
+                        </div>
+                    </div>
+
+                    <p class="projects-intro reveal">
+                        A selection of projects demonstrating how I approach
+                        software engineering, AI/ML, and real-world problems.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="project-filters reveal"
+                    id="project-filters"
+                    aria-label="Filter projects"
+                >
+                    <button class="filter-btn active" data-filter="all">
+                        All
+                    </button>
+                    <!-- Generated by JavaScript -->
+                </div>
+
+
+                <div
+                    class="projects-grid"
+                    id="projects-container"
+                >
+                    <!-- Generated by JavaScript -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== EXPERIENCE ==================== -->
+
+        <section class="section experience-section" id="experience">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-number">04</span>
+                    <div>
+                        <p class="eyebrow">EXPERIENCE</p>
+                        <h2>Where I've<br><span>been building.</span></h2>
+                    </div>
+                </div>
+
+
+                <div
+                    class="experience-list"
+                    id="experience-container"
+                >
+                    <!-- Generated by JavaScript -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== GITHUB ==================== -->
+
+        <section class="section github-section" id="github">
+
+            <div class="container">
+
+                <div class="github-card reveal">
+
+                    <div class="github-content">
+
+                        <p class="eyebrow">OPEN SOURCE / CODE</p>
+
+                        <h2>
+                            See how I
+                            <span>think in code.</span>
+                        </h2>
+
+                        <p>
+                            My GitHub contains projects, experiments, learning
+                            work, and implementations across software engineering
+                            and AI/ML.
+                        </p>
+
+                        <a
+                            href="[GITHUB URL]"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary"
+                        >
+                            Visit GitHub
+                            <span>↗</span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="github-terminal">
+
+<pre><span class="code-muted">$</span> git status
+
+<span class="code-success">●</span> working on interesting things
+
+<span class="code-muted">$</span> git branch
+
+* <span class="code-string">main</span>
+  experiments
+  learning
+  projects</pre>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== CONTACT ==================== -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-layout">
+
+                    <div class="contact-intro reveal">
+
+                        <p class="eyebrow">GET IN TOUCH</p>
+
+                        <h2>
+                            Let's build something
+                            <span>useful.</span>
+                        </h2>
+
+                        <p>
+                            Whether you want to discuss software engineering,
+                            AI/ML, a project, or an opportunity, feel free
+                            to reach out.
+                        </p>
+
+                        <a
+                            href="mailto:[YOUR EMAIL]"
+                            class="email-link"
+                        >
+                            [YOUR EMAIL]
+                            <span>↗</span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-links reveal">
+
+                        <a
+                            href="[LINKEDIN URL]"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link"
+                        >
+                            <span>
+                                <small>CONNECT</small>
+                                LinkedIn
+                            </span>
+                            <span>↗</span>
+                        </a>
+
+                        <a
+                            href="[GITHUB URL]"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link"
+                        >
+                            <span>
+                                <small>CODE</small>
+                                GitHub
+                            </span>
+                            <span>↗</span>
+                        </a>
+
+                        <a
+                            href="mailto:[YOUR EMAIL]"
+                            class="contact-link"
+                        >
+                            <span>
+                                <small>EMAIL</small>
+                                [YOUR EMAIL]
+                            </span>
+                            <span>↗</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <strong>[YOUR NAME]</strong>
+                <span>Software Engineer / AI Engineer</span>
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home">Top ↑</a>
+
+                <a
+                    href="[GITHUB URL]"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    href="[LINKEDIN URL]"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+                <a href="mailto:[YOUR EMAIL]">
+                    Email
+                </a>
+
+            </div>
+
+            <p>
+                © <span id="current-year"></span> [YOUR NAME].
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==================== PROJECT MODAL ==================== -->
+
+    <div
+        class="modal"
+        id="project-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay" data-close-modal></div>
+
+        <div class="modal-container">
+
+            <button
+                class="modal-close"
+                type="button"
+                data-close-modal
+                aria-label="Close project details"
+            >
+                ×
+            </button>
+
+            <div class="modal-content" id="project-modal-content">
+                <!-- Generated by JavaScript -->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================== BACK TO TOP ==================== -->
+
+    <button
+        class="back-to-top"
+        id="back-to-top"
+        type="button"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+
     <script src="script.js"></script>
+
 </body>
 </html>
