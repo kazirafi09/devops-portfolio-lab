@@ -1,219 +1,192 @@
 "use strict";
 
 const portfolioConfig = {
-    name: "KAZI RAFIUL KADER",
-    email: "kazirafi09@gmail.com",
-
-    github: "https://github.com/kazirafi09",
-    linkedin: "https://www.linkedin.com/in/kazi-rafiul-kader-8888441a9/"
+    name: "KAZI RAFIUL KADER", 
+    email: "kazirafi09@gmail.com", 
+    github: "https://github.com/kazirafi09", 
+    linkedin: "https://www.linkedin.com/in/kazi-rafiul-kader-888844109" 
 };
-
 
 const skills = [
     {
         category: "Programming Languages",
         items: [
-            "[LANGUAGE]",
-            "[LANGUAGE]",
-            "[LANGUAGE]"
+            "Python", 
+            "PHP", 
+            "Java", 
+            "Dart", 
+            "JavaScript", 
+            "C++" 
         ]
     },
-
     {
-        category: "AI / Machine Learning",
+        category: "Frameworks & Libraries",
         items: [
-            "Python",
-            "PyTorch",
-            "Scikit-learn",
-            "[TECHNOLOGY]"
+            "Laravel", 
+            "Flutter", 
+            "PyTorch", 
+            "Livewire", 
+            "Alpine.js", 
+            "Tailwind CSS", 
+            "Scikit-learn" 
         ]
     },
-
-    {
-        category: "Backend Development",
-        items: [
-            "FastAPI",
-            "[FRAMEWORK]",
-            "[TECHNOLOGY]"
-        ]
-    },
-
-    {
-        category: "Frontend Development",
-        items: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "[TECHNOLOGY]"
-        ]
-    },
-
     {
         category: "Databases",
         items: [
-            "[DATABASE]",
-            "[DATABASE]"
+            "MySQL", 
+            "SQLite", 
+            "Cloud Firestore" 
         ]
     },
-
-    {
-        category: "DevOps / Cloud",
-        items: [
-            "Docker",
-            "[CLOUD PLATFORM]",
-            "[TECHNOLOGY]"
-        ]
-    },
-
     {
         category: "Tools & Technologies",
         items: [
-            "Git",
-            "GitHub",
-            "Linux",
-            "[TOOL]"
+            "Git", 
+            "GitHub", 
+            "Firebase", 
+            "REST APIs", 
+            "DigitalOcean Spaces", 
+            "Vite", 
+            "Docker",
+            "Linux"
         ]
     }
 ];
 
 const projects = [
-
     {
-        title: "[PROJECT NAME]",
+        title: "AI Photo Booth", 
         category: "AI / ML",
         year: "2026",
-
         description:
-            "[SHORT PROJECT DESCRIPTION]",
-
+            "Automated photo booth app transforming guest portraits into stylized AI fashion sketches with integrated cloud printing.", 
         overview:
-            "[LONGER PROJECT OVERVIEW]",
-
+            "A comprehensive photo booth application built with Laravel 12 that leverages the Replicate API to transform user photos into black-and-white fashion sketches, storing assets in cloud storage and dispatching them directly to local print hardware.", 
         problem:
-            "[WHAT PROBLEM DOES THIS PROJECT SOLVE?]",
-
+            "Event photo booths often require manual post-processing, slow rendering pipelines, and complex local print configurations to produce custom artistic takeaways.", 
         solution:
-            "[HOW DID YOU SOLVE IT?]",
-
+            "Engineered an automated pipeline connecting Livewire-driven uploads directly to Replicate model endpoints, DigitalOcean Spaces, and the PrintNode API for instant hardware execution.", 
         features: [
-            "[KEY FEATURE]",
-            "[KEY FEATURE]",
-            "[KEY FEATURE]"
+            "Automated AI black-and-white sketch generation via Replicate API", 
+            "Direct thermal/hardware printing automation using PrintNode API", 
+            "Cloud asset storage pipeline with DigitalOcean Spaces and Intervention Image 3" 
         ],
-
         technologies: [
-            "Python",
-            "PyTorch",
-            "[TECHNOLOGY]"
+            "Laravel 12", 
+            "Livewire 3", 
+            "Replicate AI", 
+            "PHP 8.2+", 
+            "DigitalOcean Spaces", 
+            "PrintNode API" 
         ],
-
-        image: "",
-
+        image: "images/projects/photo-booth.jpg",
         video: "",
-
-        github: "[GITHUB PROJECT URL]",
-
+        github: "https://github.com/kazirafi09", 
         demo: ""
     },
-
-
     {
-        title: "[PROJECT NAME]",
-        category: "Software",
+        title: "Talk to Quran", 
+        category: "AI / ML",
         year: "2026",
-
         description:
-            "[SHORT PROJECT DESCRIPTION]",
-
+            "AI-powered Quranic assistant delivering context-grounded responses with exact Surah and Ayah citations.", 
         overview:
-            "[LONGER PROJECT OVERVIEW]",
-
+            "A cross-platform mobile assistant created with Flutter and Material 3, backed by a custom Python API to parse chat histories and retrieve grounded Quranic knowledge.", 
         problem:
-            "[WHAT PROBLEM DOES THIS PROJECT SOLVE?]",
-
+            "Finding direct Quranic references and contextual answers via mobile search often requires cross-referencing multiple unstructured sources.", 
         solution:
-            "[HOW DID YOU SOLVE IT?]",
-
+            "Built an AI-grounded retrieval service with Python and integrated it seamlessly into a clean Flutter interface with Firebase Authentication.", 
         features: [
-            "[KEY FEATURE]",
-            "[KEY FEATURE]",
-            "[KEY FEATURE]"
+            "Grounded responses paired with exact Surah and Ayah citations", 
+            "Contextual chat memory processed via a dedicated Python API server", 
+            "Secure session management with Firebase Auth" 
         ],
-
         technologies: [
-            "[TECHNOLOGY]",
-            "[TECHNOLOGY]",
-            "[TECHNOLOGY]"
+            "Flutter", 
+            "Material 3", 
+            "Python", 
+            "Firebase Auth", 
+            "Cloud Firestore" 
         ],
-
-        image: "",
-
+        image: "images/projects/talk-to-quran.jpg",
         video: "",
-
-        github: "[GITHUB PROJECT URL]",
-
+        github: "https://github.com/kazirafi09", 
         demo: ""
     },
-
-
     {
-        title: "[PROJECT NAME]",
+        title: "Shelf-E", 
+        category: "Full Stack",
+        year: "2026",
+        description:
+            "Modern e-commerce bookstore featuring real-time API search, cart handling, and an admin management suite.", 
+        overview:
+            "A full-featured online book retail platform developed using Laravel 12, Tailwind CSS, and Alpine.js 3, featuring live catalog queries and an administrative order management flow.", 
+        problem:
+            "Online book shoppers need instant client-side catalog filtering without full-page reloads, backed by reliable order and inventory tracking.", 
+        solution:
+            "Implemented an API-driven frontend catalog in Alpine.js paired with Laravel Breeze authentication and SQLite/MySQL database operations.", 
+        features: [
+            "Real-time API-driven live book search and dynamic catalog filtering", 
+            "Full shopping cart, checkout workflow, and order tracking", 
+            "Protected admin dashboard for inventory and order management" 
+        ],
+        technologies: [
+            "Laravel 12", 
+            "Alpine.js 3", 
+            "Tailwind CSS", 
+            "SQLite", 
+            "Laravel Breeze" 
+        ],
+        image: "images/projects/shelf-e.jpg",
+        video: "",
+        github: "https://github.com/kazirafi09", 
+        demo: "https://www.shelfebd.com/" 
+    },
+    {
+        title: "PlagiarDetect", 
         category: "Backend",
-        year: "2026",
-
+        year: "2025",
         description:
-            "[SHORT PROJECT DESCRIPTION]",
-
+            "Document parsing and similarity checking system designed to analyze academic and professional text files.", 
         overview:
-            "[LONGER PROJECT OVERVIEW]",
-
+            "An automated plagiarism analysis backend combining Laravel and Python algorithms to verify submitted documents against internal databases.", 
         problem:
-            "[WHAT PROBLEM DOES THIS PROJECT SOLVE?]",
-
+            "Manually comparing multi-format document submissions for structural text overlap is slow and prone to formatting inconsistencies.", 
         solution:
-            "[HOW DID YOU SOLVE IT?]",
-
+            "Created an automated document conversion and parsing pipeline that runs similarity comparison algorithms and sends automated email reports.", 
         features: [
-            "[KEY FEATURE]",
-            "[KEY FEATURE]",
-            "[KEY FEATURE]"
+            "Multi-format document parsing and text similarity scoring", 
+            "Automated result generation with asynchronous email alerts", 
+            "Secure file storage pipeline with role-based access management" 
         ],
-
         technologies: [
-            "[TECHNOLOGY]",
-            "[TECHNOLOGY]",
-            "[TECHNOLOGY]"
+            "Laravel", 
+            "Python", 
+            "MySQL", 
+            "REST APIs" 
         ],
-
-        image: "",
-
+        image: "images/projects/plagiardetect.jpg",
         video: "",
-
-        github: "[GITHUB PROJECT URL]",
-
+        github: "https://github.com/kazirafi09", 
         demo: ""
     }
-
 ];
 
-
 const experience = [
-
     {
         role: "AI Engineer Trainee",
-        company: "[COMPANY NAME]",
-        duration: "[START DATE] — Present",
-
+        company: "BJIT",
+        duration: "2026 — Present",
         description:
-            "[DESCRIBE YOUR RESPONSIBILITIES, CONTRIBUTIONS, AND THE TYPE OF SYSTEMS YOU WORK ON.]",
-
+            "Developing scalable backend systems, training and fine-tuning machine learning models, and integrating generative AI pipelines into production environments.",
         technologies: [
-            "[TECHNOLOGY]",
-            "[TECHNOLOGY]",
-            "[TECHNOLOGY]"
+            "Python", 
+            "PyTorch", 
+            "FastAPI",
+            "Docker"
         ]
     }
-
 ];
 
 
